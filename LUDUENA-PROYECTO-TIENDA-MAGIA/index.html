@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display:ital,wght@0,500;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+
+    <!-- Estilos-->
+
+    <link rel="stylesheet" href="./bst/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./bst/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 576px)" />
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 993px)" />
+
+    <title>El baúl mágico</title>
+</head>
+
+<body>
+
+    <!-- Menú de navegación -->
+
+    <!-- Código nav original-->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img class="favicon" src="./img/varios/logo.png" alt="Cofre mágico abriéndose" width="70" height="50">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#nosotros">Nosotros</a>
+                    <a class="nav-link active" href="#categorias">Categorías</a>
+                    <a class="nav-link active" href="#productos">Productos</a>
+                    <a class="nav-link active" href="#beneficios">¿Por qué aprender magia?</a>
+                    <a class="nav-link active" href="./truco/efecto.html">¡Probá éste truco!</a>
+                    <a class="nav-link active" href="#contacto">Contacto</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="container d-flex justify-content-center">
+            <h1 class="text-warning text-center d-none d-md-block">El baúl mágico</h1>
+        </header>
+
+        <!-- Carrousel-->
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade d-none d-lg-block" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="5000">
+                    <img src="./img/carrousel/cartas__ps__4.jpg" class="d-block w-100 img-fluid img__carrousel"
+                        alt="Carta de póker flotando">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="box b1 animUno parrafo__carrousel">
+                            Hacé posible lo imposible
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-interval="5000">
+                    <img src="./img/carrousel/esposas__ps__2.jpg" class="d-block w-100 img-fluid img__carrousel"
+                        alt="Esposas de escapismo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="box b1 animUno parrafo__carrousel">
+                            Escapate
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-interval="5000">
+                    <img src="./img/carrousel/fuego.jpg" class="d-block w-100 img-fluid img__carrousel"
+                        alt="Magia con fuego">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="box b1 animUno parrafo__carrousel">
+                            Asombrá
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-interval="5000">
+                    <img src="./img/carrousel/panuelo.jpg" class="d-block w-100 img-fluid img__carrousel"
+                        alt="Pañuelo atravesando teléfono celular">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="box b1 animUno parrafo__carrousel">
+                            Uní la magia y la tecnología
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-interval="5000">
+                    <img src="./img/carrousel/sogas__ps.jpg" class="d-block w-100 img-fluid img__carrousel"
+                        alt="Manos sosteniendo una cuerda">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p class="box b1 animUno parrafo__carrousel">
+                            La magia es mucho más de lo que parece
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Historia y filosofía de la empresa-->
+        <section class="row">
+
+
+            <div class="container py-3">
+
+                <div class="row g-0 ps-lg-1">
+                    <div class="col-md-10 m-md-auto col-lg-4 my-3">
+                        <img id="cofre__magico" src="./img/varios/cofre__magico.jpg"
+                            class="img-fluid rounded-start d-md-none d-lg-block" alt="Cofre mágico abierto">
+                    </div>
+                    <div class="col-md-12 col-lg-8 ps-md-3 ps-lg-5">
+
+                        <h2 class="my-4 my-md-5 card-title text-md-center text-warning py-3" id="nosotros">
+                            Nosotros</h2>
+
+                        <!-- Imagen sólo para tablet -->
+
+                        <div class="col-md-10 m-md-auto col-lg-4 my-3">
+                            <img src="./img/varios/cofre__magico.jpg"
+                                class="img-fluid rounded-start d-none d-md-block d-lg-none img__nosotros"
+                                alt="Cofre mágico abierto">
+                        </div>
+
+                        <div class="container__texto__fondo">
+                            <p class="card-text">
+                                <strong>El Baúl Mágico</strong> se abrió en noviembre de 2022 por un grupo de
+                                entusiastas a la
+                                <strong>
+                                    magia</strong> y la <strong> tecnología</strong>. Nos define la
+                                <strong>curiosidad</strong> y la
+                                <strong>pasión</strong>;
+                                nos encanta
+                                entender cómo funcionan las cosas: desde una computadora hasta el escapismo más
+                                impactante de
+                                <strong>
+                                    Harry
+                                    Houdini</strong>.
+                            </p>
+
+                            <p class="card-text">
+                                Además de vender somos fabricantes de mazos de cartas personalizados:
+                                ¡<strong>Marvel</strong>,
+                                <strong lang="en">Star
+                                    Wars</strong> y <strong>El Señor de los Anillos</strong> son lo más pedidos!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container py-3">
+
+                <div class="row g-0 ps-1">
+
+                    <div class="col-md-12 col-lg-8 ps-md-3 pe-lg-5">
+
+
+                        <h2 class=" my-4 my-md-5 card-title text-md-center text-warning py-3">Nuestra
+                            historia
+                        </h2>
+
+                        <div class="container__texto__fondo">
+                            <p class="card-text">
+                                Un día del 2020 durante la cuarentena encontramos de casualiad en <strong>
+                                    Youtube</strong> una
+                                rutina
+                                con cartas del gran
+                                mago argentino <strong>René Lavand</strong> llamada <strong> "La belleza de lo
+                                    simple"</strong>.
+                                No podíamos
+                                creer cómo de una forma tan lenta, casual y a una mano aquel mago solemne lograba
+                                dejarnos con la
+                                boca
+                                abierta.
+                            </p>
+
+                            <p class="card-text">
+                                Siendo nosotros fanáticos de los enigmas quisimos aprender de lleno los secretos de la
+                                <strong>magia</strong>. Desde
+                                aquel
+                                momento, el flechazo fue inmediato.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-10 m-md-auto col-lg-4 my-3">
+                        <img src="./img/varios/rene__lavand.jpg" class="img-fluid rounded-start img__nosotros"
+                            alt="René Lavand, mago argentino" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="container my-md-5 frase__container">
+                <div class="card card__fondo__transparente">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p class="card-text text-center"><strong>"No se puede hacer más lento"</strong></p>
+                            <footer class="blockquote-footer text-end"> René Lavand</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container py-3">
+
+                <div class="row g-0 ps-1">
+                    <div class="col-md-10 m-md-auto col-lg-4 my-3">
+
+                        <img src="./img/varios/now__you__see__me.jpg"
+                            class="img-fluid rounded-start d-none d-md-none d-lg-block"
+                            alt="Escena de la película Los ilusionistas">
+                    </div>
+                    <div class="col-md-12 col-lg-8 ps-md-3 ps-lg-5">
+                        <div class="card-body">
+                            <h2 class="my-4 my-md-5 card-title text-md-center text-warning py-3">Nuestra
+                                misión
+                            </h2>
+
+                            <!-- Imagen sólo para mobile y tablet -->
+
+                            <div class="col-md-10 m-md-auto col-lg-4 my-3 img__ilustrativa">
+                                <img src="./img/varios/now__you__see__me.jpg"
+                                    class="img-fluid rounded-start d-lg-none img__nosotros"
+                                    alt="Escena de la película Los ilusionistas">
+                            </div>
+
+                            <div class="container__texto__fondo">
+                                <p class="card-text d-md-none d-lg-block">
+                                    Lo que empezó como un juego nos llevó a ver más allá de la típica imagen del mago
+                                    con
+                                    capa y varita
+                                    que
+                                    saca un conejo de la galera. Aprendimos que la <strong>magia</strong> existe tanto
+                                    para
+                                    <strong>entretener</strong> e <strong>inspirar</strong> como para
+                                    ayudarnos a ser más <strong>creativos</strong>, ser <strong>mejores para resolver
+                                        problemas</strong>
+                                    en
+                                    nuestra vida diaria, <strong> romper con el
+                                        miedo a hablar en público</strong>, entre muchas otras cosas más (Para ver todos
+                                    los
+                                    beneficios
+                                    de
+                                    la <strong>magia</strong> seguí leyendo más abajo).
+                                </p>
+                                <p class="card-text">
+                                    En resumen, nuestra <strong>misión</strong> es que puedas:
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-1 p-md-4 row-cols-lg-2 g-5 p-lg-5">
+                    <div class="col">
+                        <div class="card card__fondo__transparente">
+                            <img src="./img/nuestra__mision/asombrar.jpg" class="card-img-top" alt="Público asombrado">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Asombrar e inspirar</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card__fondo__transparente">
+                            <img src="./img/nuestra__mision/buen__rato.jpg" class="card-img-top"
+                                alt="Gente feliz en una fiesta">
+
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Que todos disfruten con vos</h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card__fondo__transparente">
+                            <img src="./img/nuestra__mision/hablar__en__publico.jpg" class="card-img-top"
+                                alt="Hombre hablando en público">
+
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Poder hablar en público</h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card__fondo__transparente">
+                            <img src="./img/nuestra__mision/maga__divertida.jpg" class="card-img-top"
+                                alt="Maga durante un efecto de cambio de ropa">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Divertirte</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Descripción de los productos -->
+
+        <section class="row">
+
+            <div class="container container__solo__texto">
+                <h2 class="my-4 my-md-5 text-md-center py-3" id="categorias">Categorías</h2>
+
+                <div class="container__texto__fondo">
+                    <p class="card-text">
+                        La <strong>magia</strong> tiene muchas ramas y cada mago tiene una en la que decide
+                        especializarse según sus gustos. Para <strong>Harry Houdini</strong> fue el
+                        <strong>escapismo</strong>, mientras que para <strong>René Lavand</strong> fue la
+                        <strong>cartomagia</strong>. Y para el dúo de magos cómicos <strong>Penn</strong> y
+                        <strong lang="en">Teller</strong> es la <strong>magia de salón</strong>. Otra rama de la
+                        <strong>magia</strong> es el <strong lang="en">close-up</strong> o <strong>magia de
+                            cerca</strong>.
+                    </p>
+                    <p class="card-text">¿Sos de la rama del <strong lang="en">close-up</strong>? ¿O quizás de los que
+                        les
+                        gusta practicar
+                        <strong>escapismo</strong>? ¿Preferís la <strong>cartomagia</strong>? ¿Sos un mix de todas las
+                        ramas
+                        de
+                        la <strong>magia</strong>? ¡Si es así, no estás solo!
+                    </p>
+                </div>
+
+                <div class="row g-0">
+
+                    <h3 class="px-2 my-3 my-md-5 card-title text-md-center text-lg-start py-3">
+                        Cartomagia</h3>
+                    <div class="col-md-10 m-md-auto col-lg-4 my-3">
+
+                        <img src="./img/varios/cartomagia.jpg" class="img-fluid rounded-start"
+                            alt="Cartas siendo manipuladas" />
+                    </div>
+                    <div class="col-md-12 col-lg-8 ps-md-3 pe-lg-5">
+                        <div class="card-body ps-1 my-3 ps-md-3 ps-lg-5">
+
+                            <h4 class="subtitle card-subtitle mb-2 d-none d-lg-block">El arte de las cartas</h4>
+
+                            <div class="container__texto__fondo container__categorias">
+                                <p class="card-text">
+                                    La marca por excelencia con la que trabajamos es <strong lang="en">Bicycle</strong>,
+                                    que
+                                    ofrece
+                                    calidad
+                                    y
+                                    duración.
+                                </p>
+                                <p class="card-text">
+                                    La <strong>Cartomagia</strong> es la rama más común dentro del mundo
+                                    de
+                                    las ilusiones. Consta de, precisamente, hacer una infinidad de efectos:
+                                    <strong>predicciones</strong>,
+                                    <strong>apariciones</strong>, hacerlas viajar desde tu mano al bolsillo del
+                                    espectador,
+                                    <strong>levitaciones</strong>, entre muchos más.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0">
+                    <h3 class="px-2 my-4 my-md-5 card-title text-md-center text-lg-start py-3">
+                        Close-up</h3>
+                    <div class="col-md-10 m-md-auto col-lg-4 my-3">
+                        <img src="./img/varios/manipulacion.jpg" class="img-fluid rounded-start"
+                            alt="Pelota flotando" />
+                    </div>
+                    <div class="col-md-12 col-lg-8 ps-md-3 pe-lg-5">
+                        <div class="card-body ps-1 my-3 ps-md-3 ps-lg-5">
+
+                            <h4 class="subtitle card-subtitle mb-2 d-none d-lg-block">Manipulación</h4>
+
+                            <div class="container__texto__fondo container__categorias">
+                                <p>La rama del <strong lang="en">close-up</strong> o magia de cerca incluye ilusiones
+                                    muy
+                                    visuales y
+                                    manipulación de objetos tan
+                                    ordinarios como lapiceras, monedas o bolas de esponja hasta aros chinos.</p>
+                                <p>
+                                    Tus manos van a volverse más ágiles, más flexibles y rápidas ni bien empieces a
+                                    aprender
+                                    tus primeros juegos de
+                                    <strong>magia</strong>, porque una de las habilidades que cualquier mago debe tener
+                                    es
+                                    manos hábiles para cualquier rutina.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0">
+                    <h3 class="px-2 my-4 my-md-5 card-title text-md-center text-lg-start py-3">
+                        Escapismo</h3>
+                    <div class="col-md-10 m-md-auto col-lg-4 my-3">
+                        <img src="./img/varios/escapismo.jpg" class="img-fluid rounded-start" alt="Manos esposadas" />
+                    </div>
+                    <div class="col-md-12 col-lg-8 ps-md-3 pe-lg-5">
+                        <div class="card-body ps-1 my-3 ps-md-3 ps-lg-5">
+
+                            <h4 class="subtitle card-subtitle mb-2 d-none d-lg-block">Escapes imposibles</h4>
+
+                            <div class="container__texto__fondo container__categorias">
+                                <p>
+                                    <strong>Harry Houdini</strong> fue el gran pionero que hizo del
+                                    <strong>escapismo</strong> todo un
+                                    arte
+                                    como lo conocemos hoy. A lo largo de su carrera como mago y escapista, <strong>Harry
+                                        Houdini</strong> escapó de camisas de fuerza, cadenas, tanques de agua, cajas
+                                    fuertes y hasta de un río congelado.
+
+                                </p>
+                                <p>
+                                    ¡Dejate inspirar por los escapismos más sorprendertes de <strong>Houdini</strong> y
+                                    mirá todo lo que tenemos en nuestra tienda para soltate de una
+                                    forma imposible!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FIN CONTAINER -->
+            </div>
+        </section>
+
+        <!-- Productos  -->
+
+        <section class="row">
+            <div class="container">
+                <h2 id="productos" class="text-md-center my-3 my-md-5 py-3">Productos</h2>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 ">
+                <div class="row">
+
+                    <div class="col-12 text-center ">
+                        <h3 class="my-3 py-3">Cartas</h3>
+                    </div>
+                    <div class="col-12 p-3">
+
+                        <div class="card">
+                            <img src="./img/productos/cartas.png" class="card-img-top pastilla__producto"
+                                alt="Baraja de cartas de póker">
+                            <div class="card-body">
+
+
+                                <!-- Lista de productos con acordeón para las versiones tablet y pc -->
+
+
+                                <div class="accordion d-none d-md-block" id="todos__los__productos">
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Descripción
+                                            </button>
+                                        </h4>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#todos__los__productos">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">Las cartas <strong>Bicycle</strong>
+                                                    estándar son un
+                                                    clásico en el mundo de
+                                                    la
+                                                    <strong>magia</strong> y no pueden faltarte en su kit de mago.
+                                                    Su plastificado de alta calidad las hacen
+                                                    <strong>resistentes</strong>,
+                                                    <strong>duraderas</strong> y <strong>fáciles de manipular</strong>.
+                                                </p>
+                                                <p class="card-text d-md-none">¡Son ideales incluso para
+                                                    <strong>cardistry</strong>!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Nivel
+                                            </button>
+                                        </h4>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    <strong>Principiantes</strong> y <strong>avanzados</strong>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Más
+                                            </button>
+                                        </h4>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    ¡En nuestra tienda encontrarás también muchos libros de
+                                                    <strong>cartomagia</strong>
+                                                    y <strong>cardistry</strong>!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Descripción del producto para versión mobile -->
+
+                                <p class="card-text d-md-none">Las cartas <strong>Bicycle</strong> estándar son un
+                                    clásico en el mundo de
+                                    la
+                                    <strong>magia</strong> y no pueden faltarte en su kit de mago.
+                                    Su plastificado de alta calidad las hacen <strong>resistentes</strong>,
+                                    <strong>duraderas</strong> y <strong>fáciles de manipular</strong>.
+                                </p>
+                                <p class="card-text d-md-none">¡Son ideales incluso para <strong>cardistry</strong>!</p>
+
+                                <span class="precio">$ 950</span>
+
+                                <a href="./producto__detalle/esposas.html" class="card-link btn__comprar">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4 ">
+                <div class="row">
+
+                    <div class="col-12 text-center ">
+                        <h3 class="my-3 py-3">Aros chinos</h3>
+                    </div>
+                    <div class="col-12 p-3">
+
+                        <div class="card">
+                            <img src="./img/productos/aros__chinos.png" class="card-img-top pastilla__producto"
+                                alt="Aros chinos">
+                            <div class="card-body">
+
+
+                                <div class="accordion d-none d-md-block" id="accordion__aros">
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                aria-expanded="false" aria-controls="collapseFour">
+                                                Descripción
+                                            </button>
+                                        </h4>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="heading__aros" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    Ya sea en su forma más pequeña de 10 cm, mediana de 20 cm o en su
+                                                    máximo tamaño
+                                                    de
+                                                    30 cm,
+                                                    los <strong>aros chinos</strong>
+                                                    nunca fallan en crear un efecto impactante en tu público. Son de
+                                                    <strong>acero inoxidable</strong>,
+                                                    ligeros y vienen en packs de 3, 4 o 6 aros según el
+                                                    tamaño que tengan.
+                                                    ¡Entrelazá los <strong>aros chinos</strong> entre sí y soltalos de
+                                                    una forma
+                                                    impactante!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingFive">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                aria-expanded="false" aria-controls="collapseFive">
+                                                Nivel
+                                            </button>
+                                        </h4>
+                                        <div id="collapseFive" class="accordion-collapse collapse"
+                                            aria-labelledby="heading__aros" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    <strong>Principiantes</strong> y <strong>avanzados</strong>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingSix">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                                aria-expanded="false" aria-controls="collapseSix">
+                                                Más
+                                            </button>
+                                        </h4>
+                                        <div id="collapseSix" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    ¡Tenemos libros de sobra de muchas rutinas con <strong>aros
+                                                        chinos</strong>!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Descripción del producto para versión mobile -->
+
+                                <p class="card-text d-md-none">
+                                    Ya sea en su forma más pequeña de 10 cm, mediana de 20 cm o en su
+                                    máximo tamaño
+                                    de
+                                    30 cm,
+                                    los <strong>aros chinos</strong>
+                                    nunca fallan en crear un efecto impactante en tu público. Son de
+                                    <strong>acero inoxidable</strong>,
+                                    ligeros y vienen en packs de 3, 4 o 6 aros según el
+                                    tamaño que tengan.
+                                    ¡Entrelazá los <strong>aros chinos</strong> entre sí y soltalos de
+                                    una forma
+                                    impactante!
+                                </p>
+
+                                <span class="precio">$ 3.500</span>
+
+                                <a href="./producto__detalle/esposas.html" class="card-link btn__comprar">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="row">
+
+                    <div class="col-12 text-center ">
+                        <h3 class="my-3 py-3">Esposas</h3>
+                    </div>
+                    <div class="col-12 p-3">
+
+                        <div class="card">
+                            <img src="./img/productos/esposas.png" class="card-img-top pastilla__producto"
+                                alt="Esposas de escapismo">
+                            <div class="card-body">
+
+
+                                <div class="accordion d-none d-md-block" id="accordion__esposas">
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingSeven">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                                aria-expanded="false" aria-controls="collapseSeven">
+                                                Descripción
+                                            </button>
+                                        </h4>
+                                        <div id="collapseSeven" class="accordion-collapse collapse"
+                                            aria-labelledby="heading__aros" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    Su <strong>acero inoxidable</strong>, las cadenas, los candados y
+                                                    las llaves que
+                                                    atrapan tus
+                                                    manos
+                                                    son
+                                                    suficiente para convencer a tu público de que son <strong>esposas
+                                                        100%
+                                                        reales</strong>, sin una
+                                                    sola
+                                                    parte de
+                                                    plástico. ¡Esto hará todavía más increíble tu
+                                                    <strong>escapismo</strong> cuando en
+                                                    tres segundos
+                                                    liberes tus
+                                                    manos de ellas de una manera imposible!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingEight">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                                aria-expanded="false" aria-controls="collapseEight">
+                                                Nivel
+                                            </button>
+                                        </h4>
+                                        <div id="collapseEight" class="accordion-collapse collapse"
+                                            aria-labelledby="heading__aros" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    <strong>Avanzados</strong>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingNine">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseNine"
+                                                aria-expanded="false" aria-controls="collapseNine">
+                                                Más
+                                            </button>
+                                        </h4>
+                                        <div id="collapseNine" class="accordion-collapse collapse"
+                                            aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    Las esposas <strong>incluyen dos candados y llave</strong>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Descripción del producto para versión mobile -->
+
+                                <p class="card-text d-md-none">
+                                    Su <strong>acero inoxidable</strong>, las cadenas, los candados y las llaves que
+                                    atrapan tus
+                                    manos
+                                    son
+                                    suficiente para convencer a tu público de que son <strong>esposas 100%
+                                        reales</strong>, sin una
+                                    sola
+                                    parte de
+                                    plástico. ¡Esto hará todavía más increíble tu <strong>escapismo</strong> cuando en
+                                    tres segundos
+                                    liberes tus
+                                    manos de ellas de una manera imposible!
+                                </p>
+                                <p class="card-text d-md-none">
+                                    Las esposas <strong>incluyen dos candados y llave</strong>.
+                                </p>
+
+                                <span class="precio">$ 2.000</span>
+
+                                <a href="./producto__detalle/esposas.html" class="card-link btn__comprar">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="row">
+
+                    <div class="col-12 text-center ">
+
+                        <h3 class="my-3 py-3">Bolas de esponja</h3>
+                    </div>
+                    <div class="col-12 p-3">
+
+                        <div class="card">
+                            <img src="./img/productos/esponjas.jpg" class="card-img-top pastilla__producto"
+                                alt="Bolas de esponja">
+                            <div class="card-body">
+
+
+                                <div class="accordion d-none d-md-block" id="accordion__esponjas">
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingTen">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTen"
+                                                aria-expanded="false" aria-controls="collapseTen">
+                                                Descripción
+                                            </button>
+                                        </h4>
+                                        <div id="collapseTen" class="accordion-collapse collapse"
+                                            aria-labelledby="heading__esponjas" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    Su <strong>textura suave</strong>, <strong>flexible</strong> y
+                                                    <strong>tamaño pequeño</strong> hacen de las esponjas un
+                                                    elemento
+                                                    perfecto para
+                                                    toda clase de magos: <strong>profesionales</strong> o
+                                                    <strong>aficionados</strong>.
+                                                    Vienen
+                                                    en packs
+                                                    de 5 esponjas.
+                                                </p>
+                                                <p class="card-text text-md-center">
+                                                    ¿Preferís formas más interesantes? ¡Estás en el lugar indicado!
+                                                    Tenemos muchas
+                                                    formas más:
+                                                    <strong>cubos</strong>, <strong>conejitos</strong>,
+                                                    <strong>lunas</strong> y <strong>estrellas</strong> son algunas de
+                                                    ellas.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingEleven">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseEleven"
+                                                aria-expanded="false" aria-controls="collapseEleven">
+                                                Nivel
+                                            </button>
+                                        </h4>
+                                        <div id="collapseEleven" class="accordion-collapse collapse"
+                                            aria-labelledby="heading__esponjas" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    <strong>Principiantes</strong> y <strong>avanzados</strong>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingTwelve">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwelve"
+                                                aria-expanded="false" aria-controls="collapseTwelve">
+                                                Más
+                                            </button>
+                                        </h4>
+                                        <div id="collapseTwelve" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    ¡Son tan fáciles de usar que hasta un niño puede hacer un buen
+                                                    efecto de <strong>magia</strong>!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Descripción del producto para versión mobile -->
+
+                                <p class="card-text d-md-none">
+                                    Su <strong>textura suave</strong>, <strong>flexible</strong> y
+                                    <strong>tamaño pequeño</strong> hacen de las esponjas un
+                                    elemento
+                                    perfecto para
+                                    toda clase de magos: <strong>profesionales</strong> o
+                                    <strong>aficionados</strong>.
+                                    Vienen
+                                    en packs
+                                    de 5 esponjas.
+                                </p>
+                                <p class="card-text d-md-none">
+                                    ¿Preferís formas más interesantes? ¡Estás en el lugar indicado!
+                                    Tenemos muchas
+                                    formas más:
+                                    <strong>cubos</strong>, <strong>conejitos</strong>,
+                                    <strong>lunas</strong> y <strong>estrellas</strong> son algunas de
+                                    ellas.
+                                </p>
+
+                                <span class="precio">$ 850</span>
+
+                                <a href="./producto__detalle/esposas.html" class="card-link btn__comprar">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 ">
+                <div class="row">
+
+                    <div class="col-12 text-center ">
+                        <h3 class="my-3 py-3">Billete de fuego</h3>
+                    </div>
+                    <div class="col-12 p-3">
+
+                        <div class="card">
+                            <img src="./img/productos/billete__fuego.webp" class="card-img-top pastilla__producto"
+                                alt="Billete prendido fuego">
+                            <div class="card-body">
+
+
+                                <div class="accordion d-none d-md-block" id="accordion__billete">
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingThirdteen">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThirdteen"
+                                                aria-expanded="false" aria-controls="collapseThirdteen">
+                                                Descripción
+                                            </button>
+                                        </h4>
+                                        <div id="collapseThirdteen" class="accordion-collapse collapse"
+                                            aria-labelledby="heading__billete" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    El papel de chispa o <strong>papel flash</strong> es el mejor aliado
+                                                    para
+                                                    manipular
+                                                    el
+                                                    fuego. Vienen en packs de 10 unidades.
+                                                </p>
+                                                <p class="card-text text-md-center">
+                                                    Están diseñados para <strong>prenderse y apagarse
+                                                        rápidamente</strong>, sin dejar
+                                                    cenizas ni
+                                                    humo.
+                                                    Esto hará
+                                                    que tus manos queden completamente impecables después del efecto.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingFourteen">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFourteen"
+                                                aria-expanded="false" aria-controls="collapseFourteen">
+                                                Nivel
+                                            </button>
+                                        </h4>
+                                        <div id="collapseFourteen" class="accordion-collapse collapse"
+                                            aria-labelledby="heading__billete" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    <strong>Avanzados</strong>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingFiveteen">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFiveteen"
+                                                aria-expanded="false" aria-controls="collapseFiveteen">
+                                                Más
+                                            </button>
+                                        </h4>
+                                        <div id="collapseFiveteen" class="accordion-collapse collapse"
+                                            aria-labelledby="headingFiveteen" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    Incluye <strong>instrucciones</strong> y <strong>consejos de
+                                                        seguridad</strong>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Descripción del producto para versión mobile -->
+
+                                <p class="card-text d-md-none">
+                                    El papel de chispa o <strong>papel flash</strong> es el mejor aliado
+                                    para
+                                    manipular
+                                    el
+                                    fuego. Vienen en packs de 10 unidades.
+                                </p>
+                                <p class="card-text d-md-none">
+                                    Están diseñados para <strong>prenderse y apagarse rápidamente</strong>, sin dejar
+                                    cenizas ni
+                                    humo.
+                                    Esto hará
+                                    que tus manos queden completamente impecables después del efecto.
+                                </p>
+
+                                <span class="precio">$ 1.250</span>
+
+                                <a href="./producto__detalle/esposas.html" class="card-link btn__comprar">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4 ">
+                <div class="row">
+
+                    <div class="col-12 text-center">
+                        <h3 class="my-3 py-3">Pañuelo mágico</h3>
+                    </div>
+                    <div class="col-12 p-3">
+
+                        <div class="card">
+                            <img src="./img/productos/panuelo__magico.jpg" class="card-img-top pastilla__producto"
+                                alt="Billete prendido fuego">
+                            <div class="card-body">
+
+
+                                <div class="accordion d-none d-md-block" id="accordion__panuelo">
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingSixteen">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSixteen"
+                                                aria-expanded="false" aria-controls="collapseSixteen">
+                                                Descripción
+                                            </button>
+                                        </h4>
+                                        <div id="collapseSixteen" class="accordion-collapse collapse"
+                                            aria-labelledby="heading__panuelo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    Uno de los efectos más <strong>visuales</strong> que tenemos es
+                                                    pasar, literalmente,
+                                                    un pañuelo
+                                                    de
+                                                    seda a
+                                                    través de cualquier <strong lang="en">smartphone</strong> propio o,
+                                                    todavía
+                                                    mejor,
+                                                    de algún
+                                                    voluntario. Muy <strong>visual</strong>, <strong>muy fácil de
+                                                        hacer</strong>, es
+                                                    <strong>apto para principiantes</strong> y el <strong>asombro está
+                                                        garantizado</strong>.
+                                                    La <strong>magia</strong> y la <strong>tecnología</strong> se
+                                                    mezclan todo el
+                                                    tiempo, y ésto
+                                                    es prueba de ello.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingSeventeen">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSeventeen"
+                                                aria-expanded="false" aria-controls="collapseSeventeen">
+                                                Nivel
+                                            </button>
+                                        </h4>
+                                        <div id="collapseSeventeen" class="accordion-collapse collapse"
+                                            aria-labelledby="heading__billete" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    <strong>Principiantes</strong> y <strong>avanzados</strong>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header" id="headingEighteen">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseEighteen"
+                                                aria-expanded="false" aria-controls="collapseEighteen">
+                                                Más
+                                            </button>
+                                        </h4>
+                                        <div id="collapseEighteen" class="accordion-collapse collapse"
+                                            aria-labelledby="headingEighteen" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="card-text text-md-center">
+                                                    ¡Si hacés éste juego con un teléfono de alguien del público el
+                                                    <strong>efecto</strong> en tu público es mucho más poderoso!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Descripción del producto para versión mobile -->
+
+                                <p class="card-text d-md-none">
+                                    Uno de los efectos más <strong>visuales</strong> que tenemos es pasar, literalmente,
+                                    un pañuelo
+                                    de
+                                    seda a
+                                    través de cualquier <strong lang="en">smartphone</strong> propio o,
+                                    todavía
+                                    mejor,
+                                    de algún
+                                    voluntario. Muy <strong>visual</strong>, <strong>muy fácil de
+                                        hacer</strong>, es
+                                    <strong>apto para principiantes</strong> y el <strong>asombro está
+                                        garantizado</strong>.
+                                    La <strong>magia</strong> y la <strong>tecnología</strong> se
+                                    mezclan todo el
+                                    tiempo, y ésto
+                                    es prueba de ello.
+                                </p>
+
+                                <span class="precio">$ 2.050</span>
+
+                                <a href="./producto__detalle/esposas.html" class="card-link btn__comprar">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beneficios de aprender magia -->
+
+
+        <section class="row">
+
+            <div class="container container__solo__texto">
+                <h2 id="beneficios" class="my-3 my-md-5 text-center py-3 px-1">¿Por qué aprender magia?</h2>
+
+                <div class="row">
+                    <div class="col-12 p-3">
+
+                        <div class="container__texto__fondo">
+                            <p class="card-text">Como ya mencionamos antes, aprender <strong>magia</strong> trae
+                                muchos
+                                <strong>beneficios</strong>. Presentar un efecto es mucho más que sólo sacar una moneda
+                                de detrás de la oreja de tu público, involucra estar atento en todo momento, hablar,
+                                moverse y nunca perder el control de la situación por más que tu efecto no haya salido
+                                como esperabas o alguien no reacciona como querías.
+
+                            </p>
+                            <p>
+                                Sin
+                                importar la edad o si sos un profesional o un simple aficionado, éstas son algunas
+                                de
+                                las
+                                ventajas
+                                que
+                                obtenés al practicar <strong>magia</strong>:
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row row-cols-1 row-cols-md-1 p-md-4 row-cols-lg-2 g-4 p-lg-5">
+
+                    <div class="col">
+                        <div class="card card__beneficios">
+                            <img src="./img/varios/solving__skills.jpg" class="img-fluid rounded-start"
+                                alt="Piezas de rompecabezas" />
+                            <div class="card-body">
+
+                                <h3 class="py-sm-4 mx-md-4 card-title accordion-header text-center titulo__beneficios">
+                                    Mejor al resolver problemas</h3>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Ya sea resolver un juego de ingenio, un problema matemático o programar
+                                        ésa aplicación para tu trabajo o tu carrera que te está quemando la
+                                        cabeza, hacer juegos de <strong>magia</strong> significa pensar fuera de
+                                        la caja, porque tenés que pensar en la presentación, tener un plan b y
+                                        hasta un plan z si algo no salió como esperabas, e incluso para inventar
+                                        un efecto nuevo o reversionar uno que ya existe.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="card card__beneficios">
+                            <img src="./img/varios/social__skills__2.jpg" class="img-fluid rounded-start"
+                                alt="Grupo de amigos riendo" />
+                            <div class="card-body">
+
+                                <h3 class="py-sm-4 mx-md-4 card-title accordion-header text-center titulo__beneficios">
+                                    Mejores habilidades sociales</h3>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Al presentar un efecto frente a otros estás interactuando. Te
+                                        sorprenderá
+                                        saber lo mucho que la <strong>magia</strong> ayuda para perderle el miedo a
+                                        hablar
+                                        en
+                                        público,
+                                        con
+                                        desconocidos y para romper el hielo en una reunión social. Cuanto más
+                                        <strong>magia</strong> hagas frente a otros, más estarás ejercitando tus
+                                        habilidades
+                                        sociales, tu lenguaje corporal, el tono y alcance de tu voz, e irás mejorando
+                                        con el tiempo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card__beneficios">
+                            <img src="./img/varios/autoestima__1.jpg" class="img-fluid rounded-start"
+                                alt="Hombre atractivo con anteojos de sol" />
+                            <div class="card-body">
+
+                                <h3 class="py-sm-4 mx-md-4 card-title accordion-header text-center titulo__beneficios">
+                                    Mayor confianza y autoestima</h3>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Cuando dominás una habilidad ganás <strong>confianza</strong> en vos y en
+                                        tus
+                                        capacidades, hay menor lugar para dudar de vos mismo.
+                                        Cuanto más confíes en vos, más <strong>autoestima</strong> tendrás.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card__beneficios">
+                            <img src="./img/varios/paciencia.webp" class="img-fluid rounded-start"
+                                alt="Hombre en la cima de una montaña" />
+                            <div class="card-body">
+
+                                <h3 class="py-sm-4 mx-md-4 card-title accordion-header text-center titulo__beneficios">
+                                    Paciencia y perseverancia</h3>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Nadie se vuelve un mago experto de la noche a la mañana.
+                                        Practicar
+                                        <strong>magia</strong> enseña a ser <strong>paciente</strong> y
+                                        <strong>perseverante</strong> para no rendirte hasta lograr eso que querés.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin contenedor de tarjetas -->
+                </div>
+                <div>
+
+                    <div class="container container__solo__texto d-none d-md-block my-md-4 my-lg-5">
+                        <h3 class="my-4 my-md-5 text-md-center py-3 subtitulo__principal">Y algo más...</h3>
+
+                        <div class="container__texto__fondo">
+                            <p class="card-text">
+                                En el mundo de las ilusiones nada es lo que parece. La <strong>magia</strong> nos
+                                asombra incluso sabiendo que lo que vemos es un truco, porque aún así los magos
+                                conseguimos desafiar a la lógica, la física y doblar las leyes naturales a nuestro
+                                antojo para crear aquel momento mágico y el asombro del resto.
+                            </p>
+                            <p>
+                                Descubrí la perspectiva que tiene un mago al presentar un efecto de
+                                <strong>magia</strong>.
+                                <strong>Esteban
+                                    Pomar</strong> nos lo cuenta en ésta charla <strong>Ted</strong>.
+                            </p>
+                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/S8BOduNrTFA"
+                            title="La magia no está en la magia | Esteban Pomar | TEDxRiodelaPlata" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="container__texto__fondo">
+
+                        <p class="card-text">
+                        Hablando de <strong>magia</strong>, ¿te gustaría ver un efecto ahora mismo? Vamos a jugar con tu mente e intentaremos
+                        engañarla desde tu pantalla el siguiente juego  aquí: 👉 <a href="./truco/efecto.html">Ver efecto</a>. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto-->
+
+        <section class="row">
+
+            <div class="container-fluid contacto__container">
+
+                <h2 id="contacto" class="my-4 my-md-5 text-md-center py-3">Contacto</h2>
+
+                <form method="post" class="row">
+
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label datos">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" aria-describedby="nombre"
+                                placeholder="Ingresá tu nombre" required>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label datos">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" aria-describedby="apellido"
+                                placeholder="Ingresá tu apellido" required>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label datos">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="email"
+                                placeholder="Ingresá tu email" required>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 mb-3">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label datos">Teléfono</label>
+                            <input type="number" class="form-control" id="telefono" aria-describedby="telefono"
+                                placeholder="Número de teléfono" required>
+                        </div>
+                    </div>
+
+                    <div id="opciones">
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="magiaFav" class="form-label datos">Tipo de magia</label>
+                            <select class="form-select" name="magiaFav" id="magiaFav">
+                                <option value="1">Close up</option>
+                                <option value="2">Escapismo</option>
+                                <option value="3">Manipulación</option>
+                                <option value="4">Magia de escenario</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label for="comentarios" class="form-label"> </label>
+
+                    <div class="container__form__textarea">
+                        <textarea id="comentarios" name="comentarios"
+                            placeholder="Escribí aquí tu consulta o comentario" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form__btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+
+        <!-- Footer del sitio de la empresa-->
+
+        <div class="container footer__empresa">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <h3>Newsletter</h3>
+
+                    <hr />
+                    <div class="container">
+                        <label for="newsletter" id="newsletter" name="newsletter">
+                            <input class="form-control d-lg-none" id="input__newsletter__sm__y__md" type="email"
+                                placeholder="Ingresá tu mail" required />
+
+                            <!-- Input sólo versión lg-->
+
+                            <input class="form-control d-none d-lg-block" id="input__newsletter" type="email"
+                                placeholder="Ingresá tu mail y recibí beneficios!" required />
+
+                        </label>
+                        <button type="submit" class="btn btn-primary form__btn" id="btn__newsletter">Enviar</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h3>Nosotros</h3>
+
+                    <hr />
+                    <ul class="list-unstyled">
+                        <a href="#nosotros">
+                            <li>Historia</li>
+                        </a>
+
+                        <a href="#productos">
+                            <li>Productos</li>
+                        </a>
+
+                        <li>Acerca de</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <div id="footer__logo">
+                        <a href="./index.html"><img src="./img/varios/logo.png" alt="Cofre mágico abriéndose" width="70"
+                                height="50" /></a>
+                        <h2 class="text-end" id="footer__titulo__empresa">El baúl mágico</h2>
+                    </div>
+
+                    <hr />
+                    <ul class="list-unstyled">
+                        <li>Av. Siempreviva 456, CABA</li>
+                        <li>Días y horarios de atención: Lun a Vie: de 10 a 17 hs y Sáb: 10 a 13.30 hs.</li>
+                        <li>Tel.: +54 1122-3344</li>
+                        <li>E-mail: www.elbaulmagico@info.com.ar</li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- Fin container del footer de la web-->
+        </div>
+
+        <h2 class="my-3 my-md-5 text-md-center py-3 px-2">Acerca de mí</h2>
+        <div class="row g-0 row__footer">
+
+            <div class="col-md-5 m-md-auto col-lg-4 my-3">
+
+                <img src="./img/perfil__ml/mariana__luduena.jpg" class="img-fluid rounded-start" alt="Mariana Ludueña">
+            </div>
+            <div class="col-md-12 col-lg-8">
+                <div class="card-body skills__cards my-3">
+
+                    <h3 class="my-md-4 subtitle card-subtitle mb-2 d-none d-lg-block">Mis datos</h3>
+
+                    <div class="card-group">
+                        <div class="card skills__card mx-1">
+
+                            <div class="skills__img__container px-2">
+                                <img src="./img/varios/skills.png" class="card-img-top" alt="Icono de una computadora">
+                            </div>
+
+                            <div class="card-body">
+                                <h4 class="card-title">Skills</h4>
+                                <ul class="skills__lista">
+                                    <li><strong>HTML5</strong></li>
+                                    <li><strong>Css</strong></li>
+                                    <li><strong>Javascript</strong></li>
+                                    <li><strong>Git</strong></li>
+                                    <li><strong>SEO</strong></li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="card skills__card mx-1">
+
+                            <div class="skills__img__container px-2">
+                                <img src="./img/varios/idiomas.png" class="card-img-top"
+                                    alt="Banderas inglesa, española y alemana">
+                            </div>
+
+                            <div class="card-body">
+                                <h4 class="card-title">Idiomas</h4>
+                                <ul class="skills__lista">
+                                    <li><strong>Español</strong>: nativo</li>
+                                    <li><strong>Inglés</strong>: B2</li>
+                                    <li><strong>Alemán</strong>: B1</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="card skills__card mx-1">
+
+                            <div class="skills__img__container px-2">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+
+                            <div class="card-body">
+                                <h4 class="card-title">Portfolio</h4>
+                                <ul class="skills__lista">
+                                    <a href="https://marianaluduena.github.io/coder__house__repo/" target="_blank">
+                                        <li><strong>Viandas Gaia</strong>: 2022</li>
+                                    </a>
+                                    <li><strong>Inglés</strong>: B2</li>
+                                    <li><strong>Alemán</strong>: B1</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="card skills__card mx-1">
+
+                            <div class="skills__img__container px-2">
+                                <img src="..." class="card-img-top" alt="...">
+                            </div>
+
+                            <div class="card-body">
+                                <h4 class="card-title">Mis redes</h4>
+                                <ul class="skills__lista">
+                                    <a class="link__btn__redes"
+                                        href="https://github.com/marianaluduena?tab=repositories"
+                                        target="_blank"><button class="btn btn-primary"
+                                            role="button"><strong>GitHub</strong></button></a>
+                                    <a class="link__btn__redes"
+                                        href="https://www.linkedin.com/in/mariana-ludue%C3%B1a-41839698"
+                                        target="_blank"><button class="btn btn-primary"
+                                            role="button"><strong>LinkedIn</strong></button></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src="./bst/js/bootstrap.bundle.min.js"></script>
+    <script src="./bst/js/bootstrap.bundle.min.js.map"></script>
+</body>
+
+</html>
